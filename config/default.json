@@ -52,8 +52,8 @@
         "secret": "<twitter oauth secret>"
       },
       "github": {
-        "key": "<github oauth key>",
-        "secret": "<github oauth secret>"
+        "key": "f2fd352adff37641e645",
+        "secret": "cd24cfa9483b07fda5f09051e73ce1a667c7645e"
       }
     }
   },
