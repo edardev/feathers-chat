@@ -29,6 +29,10 @@
     },
     "oauth": {
       "redirect": "/",
+      "github": {
+        "key": "f2fd352adff37641e645",
+        "secret": "cd24cfa9483b07fda5f09051e73ce1a667c7645e"
+      },
       "auth0": {
         "key": "<auth0 oauth key>",
         "secret": "<auth0 oauth secret>",
@@ -50,10 +54,6 @@
       "twitter": {
         "key": "<twitter oauth key>",
         "secret": "<twitter oauth secret>"
-      },
-      "github": {
-        "key": "f2fd352adff37641e645",
-        "secret": "cd24cfa9483b07fda5f09051e73ce1a667c7645e"
       }
     }
   },

@@ -2,7 +2,7 @@ const { AuthenticationService, JWTStrategy } = require('@feathersjs/authenticati
 const { LocalStrategy } = require('@feathersjs/authentication-local');
 const { expressOauth, OAuthStrategy } = require('@feathersjs/authentication-oauth');
 
-class GithubStrategyService extends OAuthStrategy {
+class GitHubStrategy extends OAuthStrategy {
   async getEntityData(profile) {
     const baseData = await super.getEntityData(profile);
 
@@ -18,6 +18,7 @@ module.exports = app => {
 
   authentication.register('jwt', new JWTStrategy());
   authentication.register('local', new LocalStrategy());
+  authentication.register('github', new GitHubStrategy());
 
   app.use('/authentication', authentication);
   app.configure(expressOauth());
