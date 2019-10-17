@@ -3,7 +3,7 @@ const { Service } = require('feathers-nedb');
 const cryto = require('crypto');
 
 //The Gravatar image service
-const {gravatarUrl} = 'https://s.gravatar.com/avatar';
+const gravatarUrl = 'https://s.gravatar.com/avatar';
 //The size query, Our chat needs 60ox images
 const query = 's=60';
 
@@ -27,3 +27,5 @@ exports.Users = class Users extends Service {
     return super.create(userData, params)
   }
 };
+
+
